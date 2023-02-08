@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://kit.fontawesome.com/03abd041c3.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+  
+  </head>        
+
+<body >
+  
+
+    <div id="gradient" /></div>
+
+
+
+   
+    <div class="butons">
+      <div class=""><span id="1" class="btn active"><i class="fa-solid fa-sun "></i></span></div>
+      <div class=""><span id="2" class="btn"><i class="fa-solid fa-moon"></i></span></div>
+      <div class=""><span id="3" class="btn"><i class="fa-solid fa-cookie-bite"></i></span></div>
+    </div>
+    <header> 
+      
+      <div class="container">
+       <h1></h1>
+       <h1 class="zag">Друкувальний тренажер</h1>
+      <form class="shadow2">  
+          <textarea></textarea>          
+          <input id="button"  type="button" value="Обрати текст">
+      </form>
+
+       <div class="statistic ">
+         <div class="right shadow2"> <h1>К-сть симв.= </h1> </div>
+         <div class="error shadow2"> <h1>Помилки = </h1> </div>   
+         <div class="sps shadow2"> <h1>С/хв = </h1> </div>
+         <div id="timer" class="shadow2"><h1>Час = </h1></div>
+        </div>
+        
+       
+        <div class="text ">
+          <p class="shadow2"></p>
+        </div> 
+
+          <div class="keyboard">            
+            <div class="keyboard__row">
+              <div class="key--double" data-key="192">
+                <div>~</div>
+                <div>`</div>
+              </div>
+              <div class="key--double" data-key="49">
+                <div>!</div>
+                <div>1</div>
+              </div>
+              <div class="key--double-D" data-key="50">
+                <div>@</div>                
+                <div>"</div>
+                <div>2</div>
+                <div> </div>
+              </div>
+              <div class="key--double-D" data-key="51">
+                <div>#</div>
+                <div>№</div>
+                <div>3</div>
+                <div> </div>
+              </div>
+              <div class="key--double-D" data-key="52">
+                <div>$</div>
+                <div>;</div>
+                <div>4</div>
+                <div> </div>
+              </div>
+              <div class="key--double-D" data-key="53">
+                <div>%</div>
+                <div> </div>
+                <div>5</div>
+                <div> </div>
+              </div>
+              <div class="key--double-D" data-key="54">
+                <div>^</div>
+                <div>:</div>
+                <div>6</div>
+                <div> </div>
+              </div>
+              <div class="key--double-D" data-key="55">
+                <div>&</div>
+                <div>?</div>
+                <div>7</div>
+                <div> </div>
+              </div>
+              <div class="key--double" data-key="56">
+                <div>*</div>
+                <div>8</div>
+              </div>
+              <div class="key--double" data-key="57">
+                <div>(</div>
+                <div>9</div>
+              </div>
+              <div class="key--double" data-key="48">
+                <div>)</div>
+                <div>0</div>
+              </div>
+              <div class="key--double" data-key="173">
+                <div>_</div>
+                <div>-</div>
+              </div>
+              <div class="key--double" data-key="61">
+                <div>+</div>
+                <div>=</div>
+              </div>
+              <div class="key--bottom-right key--word key--w4" data-key="8">
+                <span>delete</span>
+              </div>
+            </div>
+            <div class="keyboard__row">
+              <div class="key--bottom-left key--word key--w4" data-key="9">
+                <span>tab</span>
+              </div>
+              <div class="key--double-leter" data-char="Q">                
+                <div>Q</div>
+                <div>Й</div>
+              </div>
+              <div class="key--double-leter" data-char="W">
+                <div>W</div>
+                <div>Ц</div>
+              </div>
+              <div class="key--double-leter" data-char="E">
+                <div>E</div>
+                <div>У</div>
+              </div>
+              <div class="key--double-leter" data-char="R">
+                <div>R</div>
+                <div>К</div>
+              </div>
+              <div class="key--double-leter" data-char="T">
+                <div>T</div>
+                <div>Е</div>
+              </div>
+              <div class="key--double-leter" data-char="Y">
+                <div>Y</div>
+                <div>Н</div>
+              </div>
+              <div class="key--double-leter" data-char="U">
+                <div>U</div>
+                <div>Г</div>
+              </div>
+              <div class="key--double-leter" data-char="I">
+                <div>I</div>
+                <div>Ш</div>
+              </div>
+              <div class="key--double-leter" data-char="O">
+                <div>O</div>
+                <div>Щ</div>
+              </div>
+              <div class="key--double-leter" data-char="P">
+                <div>P</div>
+                <div>З</div>
+              </div>
+              <div class="key--double-D" data-key="219" data-char="{[">
+                <div>{</div>
+                <div> </div>
+                <div>[</div>
+                <div>Х</div>
+              </div>
+              <div class="key--double-D" data-key="221" data-char="}]">
+                <div>}</div>
+                <div> </div>
+                <div>]</div>
+                <div>Ї</div>
+              </div>
+              <div class="key--double-D" data-key="220" data-char="|\">
+                <div>|</div>
+                <div>/</div>
+                <div>\</div>
+              </div>
+            </div>
+            <div class="keyboard__row">
+              <div class="key--bottom-left key--word key--w5" data-key="20">
+                <span>caps lock</span>
+              </div>
+              <div class="key--double-leter" data-char="A">
+                <div>A</div>
+                <div>Ф</div></div>
+              <div class="key--double-leter" data-char="S">
+                <div>S</div>
+                <div>І</div></div>
+              <div class="key--double-leter" data-char="D">
+                <div>D</div>
+                <div>В</div></div>
+              <div class="key--double-leter" data-char="F">
+                <div>F</div>
+                <div>А</div></div>
+              <div class="key--double-leter" data-char="G">
+                <div>G</div>
+                <div>П</div></div>
+              <div class="key--double-leter" data-char="H">
+                <div>H</div>
+                <div>Р</div></div>
+              <div class="key--double-leter" data-char="J">
+                <div>J</div>
+                <div>О</div></div>
+              <div class="key--double-leter" data-char="K">
+                <div>K</div>
+                <div>Л</div></div>
+              <div class="key--double-leter" data-char="L">
+                <div>L</div>
+                <div>Д</div></div>
+              <div class="key--double-D" data-key="59">
+                <div>:</div>
+                <div> </div>
+                <div>;</div>
+                <div>Ж</div>
+              </div>
+              <div class="key--double-D" data-key="222">
+                <div>"</div>
+                <div> </div>
+                <div>'</div>
+                <div>Є</div>
+              </div>
+              <div class="key--bottom-right key--word key--w5" data-key="13">
+                <span>return</span>
+              </div>
+            </div>
+            <div class="keyboard__row">
+              <div class="key--bottom-left key--word key--w6" data-key="16">
+                <span>shift</span>
+              </div>
+              <div class="key--double-leter" data-char="Z">
+                <div>Z</div>
+                <div>Я</div></div>
+              <div class="key--double-leter" data-char="X">
+                <div>X</div>
+                <div>Ч</div></div>
+              <div class="key--double-leter" data-char="C">
+                <div>C</div>
+                <div>С</div></div>
+              <div class="key--double-leter" data-char="V">
+                <div>V</div>
+                <div>М</div></div>
+              <div class="key--double-leter" data-char="B">
+                <div>B</div>
+                <div>И</div></div>
+              <div class="key--double-leter" data-char="N">
+                <div>N</div>
+                <div>Т</div></div>
+              <div class="key--double-leter" data-char="M">
+                <div>M</div>
+                <div>Ь</div></div>
+              <div class="key--double-D" data-key="188">
+                <div>&lt;</div>
+                <div> </div>
+                <div>,</div>
+                <div>Б</div>
+              </div>
+              <div class="key--double-D" data-key="190">
+                <div>&gt;</div>
+                <div> </div>
+                <div>.</div>
+                <div>Ю</div>
+              </div>
+              <div class="key--double-D" data-key="191">
+                <div>?</div>
+                <div>,</div>
+                <div>/</div>
+                <div>.</div>
+              </div>
+              <div class="key--bottom-right key--word key--w6" data-key="16-R">
+                <span>shift</span>
+              </div>
+            </div>
+            <div class="keyboard__row keyboard__row--h3">
+              <div class="key--bottom-left key--word">
+                <span>fn</span>
+              </div>
+              <div class="key--bottom-left key--word key--w1" data-key="17">
+                <span>Ctrl</span>
+              </div>
+              <div class="key--bottom-left key--word key--w1" data-key="18">
+                <span>Alt</span>
+              </div>
+              <div class="key--bottom-right key--word key--w3" data-key="91">
+                <span>Win</span>
+              </div>
+              <div class="key--double key--right key--space" data-key="32" data-char=" ">
+                &nbsp;
+              </div>
+              <div class="key--bottom-left key--word key--w3" data-key="93-R">
+                <span>Win</span>
+              </div>
+              <div class="key--bottom-left key--word key--w1" data-key="18-R">
+                <span>Alt</span>
+              </div>
+              <div data-key="37" class="key--arrow">
+                <span>&#9664;</span>
+              </div>
+              <div class="key--double key--arrow--tall" data-key="38">
+                <div>&#9650;</div>
+                <div>&#9660;</div>
+              </div>
+              <div data-key="39" class="key--arrow">
+                <span>&#9654;</span>
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+
+      </header>
+
+
+      <div class="texts">
+        <div class="text-item shadow">
+          Так дбайливо розливається по повітрю звук квапливого струмочки, весело біжить звивистою стрічкою серед трави. Немов граючи на арфі, падають росинки з дерев, перестрибують ледве чутно на квіти, а потім беззвучно зникають в траві. На галявині дзижчать ділові джмелі, сарана співає свою нехитру пісню. То тут, то там чути щебетання птахів. А тон всьому задає тихий шелест вітру. Немов диригент він керує дзюрчанням струмка, стежить за тональністю росинок і періодично втихомирює комах. Ліда лежить на м'якій траві, прикриваючи голову від сонця великим листом лопуха, і насолоджується музикою природи. Вона нічого не може чути вже кілька років. Їй допомагає в цьому пам'ять.
+        </div>
+
+        <div class="text-item shadow">
+          Вона була молода і гарна собою. Великі виразні очі, витончені ніжки, спокійний і працелюбний характер. Ось тільки є недолік - з раннього ранку і до заходу сонця вся в роботі. Одне приємно, що заняття її справді жіноче і пов'язане з квітами. Але робота є робота, навіть, якщо кохана. Легко собі уявити, що ніякої особистому житті у неї не було, адже колектив виключно жіночий. Умотаешься за день, до вечора так втомишся, що стрімголов летиш додому без задніх ніг і відразу спати. Про супутнику життя вона навіть і не мріяла! Скажете, такого не може бути? – Цілком можливо, якщо наша квіткарка – справжня бджола.
+        </div>
+
+        <div class="text-item shadow">
+          Коліна трясуться, думки в паніці розбігаються в різні сторони. Долоні вологі, а блузка на спині мокра. Тільки б інструктор не здогадався, що я страшенно боюся. Посміхаюся. З усієї уявної впевненістю, і як можна спокійніше, видавлюю з себе: 
+          - Ну що, покатаємось?
+На водійські права я, звичайно, здала, але не в цей день, а кількома місяцями пізніше. І ось як було. Без усяких церемоній, я майже наказала інструктору:
+- Пристебніться, мені подзвонили з дитячого саду. Терміново треба забрати сина.
+І не очікуючи відповідної реакції, віджати педаль газу, що є сечі. Автомобіль рвонув з місця.
+... Думки розбігаються в паніці, але вже у нас двох.
+        </div>
+        <div class="text-item shadow">
+          З раннього ранку він ретельно поголився, вимастив черевики, надів випрасувану сорочку і костюм, який кілька років тому вона вибрала для нього. Він завжди цінував її смак, тому по урочистих випадках одягав саме цей костюм. З будинку вийшов без нічого. По дорозі купив її улюблені квіти – білі хризантеми. Він завжди дарував їй білі хризантеми, а вона завжди захоплювалася цими квітами. Не поспішаючи йшов по алеї з букетом. Він завжди трохи хвилювався, коли йшов до неї. І ось місце зустрічі. З фотографії надгробної плити на нього дивилася немолода, але ще дуже красива жінка, його дружина. «Мила, здрастуй! Я приніс тобі твої улюблені квіти»
+        </div>
+        <div class="text-item shadow">
+          Скільки ж можна витріщатися на мене своїми безсоромними очима?!
+          Кожен день працювати в такому напруженні просто неможливо!          
+          Схоже, він знову замишляє, як принизити мене при всіх. І головне, управи на цього мажора ніякої. Над ним «дах».
+          Намагаюся відключити нав'язливі думки про неминуче ганьбі, але автоматично чекаю підступу, що жахливо відволікає від роботи.
+          - Що Вам потрібно, Указкин? Питаю я у завис наді мною мучителя і отрути мого життя.
+          - Батько Вас до себе викликає, - єхидно посміхається він.
+          Стою тоскно під дверима, як провинена школярка. Табличка на двері свідчить «Директор школи Указкин Дмитро Олексійович»
+          Нікому не побажаю бути класною керівницею у директорського сина...
+        </div>
+      </div>    
+    <script src="./script.js"></script>
+  </body>
+</html>
